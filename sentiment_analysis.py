@@ -16,10 +16,10 @@ def get_tweet_sentiment(tweet):
         return ('neutral')
     else :
         return ('negative')
-consumer_key="thrYvZy5z3fum6XkSWsXNWJr0"
-consumer_secret="KSLixbBw9QaToKBs3C2JNNbwgIyGaxf3jRL9eJzIyEHa5oO1qc"
-access_token= "529384960-eOPUUyexTSGTHlS0Bumn62erHT6EXEvXKc5uSwwG"
-access_token_secret= "kgVW3FoLd5dTqI20S2NAg2tgaT447Ov81nT72qVpPdjZJ"
+consumer_key="tshrYvZy5z3fum6XkSWsXNWJr0"#get your consumer keys from twitter app creation - apps.twitter.com
+consumer_secret="KdSLixbBw9QaToKBs3C2JNNbwgIyGaxf3jRL9eJzIyEHa5oO1qc"
+access_token= "5293844960-eOPUUyexTSGTHlS0Bumn62erHT6EXEvXKc5uSwwG"
+access_token_secret= "kgVWm3FoLd5dTqI20S2NAg2tgaT447Ov81nT72qVpPdjZJ"
 tw=Twython(consumer_key,consumer_secret,access_token,access_token_secret)
 result_dict=tw.search(q='rahulhugsmodi',lang='en',count=30,result_type='popular')
 non_bmp_map=result_dict.fromkeys(range(0x10000,sys.maxunicode+1),0xfffd)
